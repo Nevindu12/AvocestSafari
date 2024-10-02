@@ -1,0 +1,47 @@
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url(" .. /public/fonts/InterRegular.ttf");
+    font-family: "Inter";
+    font-weight: 400;
+}
+
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url(" .. /public/fonts/JacquesFrancoisRegular.ttf");
+    font-family: "Jacques Francois";
+    font-weight: 400;
+}
+
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url(" .. /public/fonts/InconsolataRegular.ttf");
+    font-family: "Inconsolata";
+    font-weight: 400;
+}
+
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url(" .. /public/fonts/ItimRegular.ttf");
+    font-family: "Itim";
+    font-weight: 400;
+}
+
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url(" .. /public/fonts/JockeyOneRegular.ttf");
+    font-family: "Jockey One";
+    font-weight: 400;
+}
+
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url(" .. /public/fonts/InterBold.ttf");
+    font-family: "Inter";
+    font-weight: 700;
+}
