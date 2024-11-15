@@ -1,0 +1,59 @@
+@import url(https://db.onlinewebfonts.com/c/2da952d097bffd198ec0f0aa3fdd6804?family=JejuHallasan);
+
+/* Navbar Logo */
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+.navbar {
+    padding: 0 80px 0 80px;
+}
+
+.nav-item .nav-link{
+    color: #000000;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('../images/background.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0 15px; /* Add padding to avoid text cut-off on smaller screens */
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* Dark overlay */
+}
+
+.hero-section .hero-text {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    font-size: 10vw;
+    font-family: 'JejuHallasan';
+}
+
+.navbar-nav .nav-link:hover {
+    color: #000000;
+    /* background-color: #FFD700; */
+    border-radius: 5px;
+    /* padding: 5px 15px; */
+    text-decoration: underline;
+    /* font-weight: bold; */
+}
+
+.nav {
+    margin-left: 15px;
+}
