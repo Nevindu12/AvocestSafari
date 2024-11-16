@@ -1,4 +1,5 @@
 @import url(https://db.onlinewebfonts.com/c/2da952d097bffd198ec0f0aa3fdd6804?family=JejuHallasan);
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap');
 
 /* Navbar Logo */
 .logo {
@@ -57,3 +58,213 @@
 .nav {
     margin-left: 15px;
 }
+
+/* About Section Styles */
+/* .about-section .container {
+    max-width: 100%;
+    padding: 0 80px;
+}
+
+.about-section .right {
+    flex: 0 0 40%;
+    max-width: 40%;
+    height: auto;
+    min-height: 400px;
+    padding: 20px;
+}
+
+.about-section .right p{
+    background-image: url('../images/aboutbg.png');
+    background-size: cover;
+}
+
+.about-section .left {
+    flex: 0 0 55%;
+    max-width: 55%;
+}
+
+.about-section h1 {
+    font-family: 'JejuHallasan', sans-serif;
+    font-size: 2.5rem;
+    color: #000;
+}
+
+.about-section .blockquote {
+    font-style: italic;
+    color: #f4a400;
+}
+
+.quote-text {
+    max-width: 350px;
+    margin: 0 auto;
+    font-family: 'Jacques Francois', serif;
+    font-size: 1.5rem;
+    color: #000;
+    text-align: center;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.quote-mark {
+    font-size: 3rem;
+    color: #f4a400;
+    font-family: Georgia, serif;
+}
+
+.about-section p {
+    line-height: 1.8;
+}
+
+.about-section img {
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+.about-section .btn-warning {
+    font-weight: bold;
+    background-color: #f4a400;
+    border: none;
+    color: #fff;
+}
+
+.about-section .btn-warning:hover {
+    background-color: #d48800;
+}
+
+.bold-text {
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: 'JejuHallasan', sans-serif;
+    color: #000;
+}
+
+.normal-text {
+    font-weight: normal;
+    font-size: 2.5rem;
+    font-family: 'Jacques Francois', serif;
+    color: #000;
+} */
+
+
+.about-section .container {
+    max-width: 100%;
+    padding-top: 0;
+    /* padding: 0 10px; */
+}
+
+.about-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; /* Ensures both columns align to the top of the section */
+}
+
+/* .about-section .left, .about-section .right {
+    padding: 20px;
+} */
+
+.about-section .left {
+    flex: 1 1 55%;
+    max-width: 55%;
+    text-align: center;
+}
+
+.about-section .right {
+    flex: 1 1 35%;
+    max-width: 45%;
+    height: 100%;
+    margin-right: 8rem;
+    display: flex;
+    line-height: 2;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-image: url('../images/aboutbg.png');
+    background-size: cover;
+}
+
+.about-section .left h1 {
+    font-family: 'JejuHallasan', sans-serif;
+    font-size: 2.5rem;
+    color: #000;
+}
+
+.about-section .blockquote {
+    font-style: italic;
+    color: #f4a400;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.quote-text {
+    font-family: 'Jacques Francois', serif;
+    font-size: 1.5rem;
+    color: #000;
+    text-align: center;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: normal;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.quote-mark {
+    font-size: 3rem;
+    color: #f4a400;
+    font-family: Georgia, serif;
+}
+
+.about-section img {
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+.about-section .btn-warning {
+    margin-top: auto; /* Push the button to the bottom of the column */
+    font-weight: bold;
+    max-width: 8rem;
+    background-color: #f4a400;
+    border: none;
+    color: #fff;
+}
+
+.about-section .btn-warning:hover {
+    background-color: #d48800;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .about-section .left, .about-section .right {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .about-section h1 {
+        font-size: 2rem; /* Smaller title on mobile */
+    }
+
+    .quote-text {
+        font-size: 1.2rem; /* Smaller quote text on mobile */
+    }
+
+    .quote-mark {
+        font-size: 2.5rem; /* Adjust quote mark size */
+    }
+}
+
+@media (max-width: 576px) {
+    .about-section h1 {
+        font-size: 1.5rem; /* Adjust title size for very small screens */
+    }
+
+    .quote-text {
+        font-size: 1rem; /* Adjust quote text size for small screens */
+    }
+
+    .quote-mark {
+        font-size: 2rem; /* Adjust quote mark size for small screens */
+    }
+}
+
+
+
