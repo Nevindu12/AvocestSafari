@@ -245,6 +245,87 @@
 
 
 
+/* experience section */
+.experience-section {
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.section-title {
+    font-family: 'JejuHallasan', sans-serif;
+    color: white;
+    font-size: 4rem;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.experience-section .img{
+    position: absolute;
+    color: #000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background-image: url('../images/expbg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+/* .experience-section .row{
+    padding-left: 5rem;
+} */
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: none;
+    border-radius: 10px;
+    width: 18rem;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 380px;
+    object-fit: fill;
+    transition: transform 0.3s ease;
+}
+
+.card-title {
+    font-family: 'JejuHallasan', sans-serif;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.card-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #000000;
+}
+
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin: 0;
+    padding: 20px;
+    background-color: transparent;
+}
+
+
+
 
 
 
@@ -301,6 +382,13 @@
         font-size: 2.5rem;
         /* Adjust quote mark size */
     }
+
+    .section-title {
+        font-size: 2.5rem; /* Reduce title size on tablets */
+    }
+    .card {
+        margin-bottom: 20px; /* Adjust card spacing */
+    }
 }
 
 @media (max-width: 576px) {
@@ -317,5 +405,15 @@
     .quote-mark {
         font-size: 2rem;
         /* Adjust quote mark size for small screens */
+    }
+
+    .section-title {
+        font-size: 1.8rem; /* Smaller title on mobile */
+    }
+    .card-body {
+        font-size: 0.9rem; /* Smaller card text on mobile */
+    }
+    .card:hover {
+        transform: none; /* Disable hover effect on small devices */
     }
 }
