@@ -1,5 +1,7 @@
 @import url(https://db.onlinewebfonts.com/c/2da952d097bffd198ec0f0aa3fdd6804?family=JejuHallasan);
 @import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 
 /* Navbar Logo */
 .logo {
@@ -11,9 +13,22 @@
     padding: 0 80px 0 80px;
 }
 
-.nav-item .nav-link{
+.nav {
+    margin-left: 15px;
+}
+
+.nav-item .nav-link {
     color: #000000;
 }
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #333;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); 
+}
+
 
 /* Hero Section */
 .hero-section {
@@ -25,7 +40,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    padding: 0 15px; /* Add padding to avoid text cut-off on smaller screens */
+    padding: 0 15px;
 }
 
 .hero-section::before {
@@ -35,7 +50,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.3); /* Dark overlay */
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .hero-section .hero-text {
@@ -55,81 +70,16 @@
     /* font-weight: bold; */
 }
 
-.nav {
-    margin-left: 15px;
-}
-
-/* About Section Styles */
-/* .about-section .container {
+.about-section .container {
     max-width: 100%;
-    padding: 0 80px;
+    padding-top: 0;
 }
 
-.about-section .right {
-    flex: 0 0 40%;
-    max-width: 40%;
-    height: auto;
-    min-height: 400px;
-    padding: 20px;
-}
-
-.about-section .right p{
-    background-image: url('../images/aboutbg.png');
-    background-size: cover;
-}
-
-.about-section .left {
-    flex: 0 0 55%;
-    max-width: 55%;
-}
-
-.about-section h1 {
-    font-family: 'JejuHallasan', sans-serif;
-    font-size: 2.5rem;
-    color: #000;
-}
-
-.about-section .blockquote {
-    font-style: italic;
-    color: #f4a400;
-}
-
-.quote-text {
-    max-width: 350px;
-    margin: 0 auto;
-    font-family: 'Jacques Francois', serif;
-    font-size: 1.5rem;
-    color: #000;
-    text-align: center;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    white-space: normal;
-}
-
-.quote-mark {
-    font-size: 3rem;
-    color: #f4a400;
-    font-family: Georgia, serif;
-}
-
-.about-section p {
-    line-height: 1.8;
-}
-
-.about-section img {
-    max-width: 80%;
-    border-radius: 10px;
-}
-
-.about-section .btn-warning {
-    font-weight: bold;
-    background-color: #f4a400;
-    border: none;
-    color: #fff;
-}
-
-.about-section .btn-warning:hover {
-    background-color: #d48800;
+.about-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .bold-text {
@@ -144,25 +94,7 @@
     font-size: 2.5rem;
     font-family: 'Jacques Francois', serif;
     color: #000;
-} */
-
-
-.about-section .container {
-    max-width: 100%;
-    padding-top: 0;
-    /* padding: 0 10px; */
 }
-
-.about-section .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start; /* Ensures both columns align to the top of the section */
-}
-
-/* .about-section .left, .about-section .right {
-    padding: 20px;
-} */
 
 .about-section .left {
     flex: 1 1 55%;
@@ -220,7 +152,7 @@
 }
 
 .about-section .btn-warning {
-    margin-top: auto; /* Push the button to the bottom of the column */
+    margin-top: auto;
     font-weight: bold;
     max-width: 8rem;
     background-color: #f4a400;
@@ -232,39 +164,158 @@
     background-color: #d48800;
 }
 
+
+/* Tour Plans Section */
+.tour-plans-section {
+    background-image: url('../images/tourbg.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 800px;
+    color: #fff;
+}
+
+.tour-plans-section .container {
+    padding-top: 6rem;
+}
+
+.carousel-container {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.carousel-caption .btn {
+    font-family: "Itim", cursive;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.tour-plans-section h1 {
+    font-size: 4rem;
+}
+
+.tour-card {
+    background: #fff;
+    color: #000;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.tour-card h3 {
+    font-family: 'Jockey One', sans-serif;
+    font-size: 2rem;
+    color: #000;
+}
+
+.tour-card p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.safari-timings {
+    padding-top: 25px;
+    margin-top: 20px;
+}
+
+.safari-timings div {
+    text-align: center;
+}
+
+.safari-timings strong {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.safari-timings p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 60%;
+    width: 60px;
+    height: 60px;
+    background-size: 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Responsive adjustments */
 @media (max-width: 991px) {
-    .about-section .left, .about-section .right {
+
+    .about-section .left,
+    .about-section .right {
         flex: 1 1 100%;
         max-width: 100%;
     }
 
     .about-section h1 {
-        font-size: 2rem; /* Smaller title on mobile */
+        font-size: 2rem;
+        /* Smaller title on mobile */
     }
 
     .quote-text {
-        font-size: 1.2rem; /* Smaller quote text on mobile */
+        font-size: 1.2rem;
+        /* Smaller quote text on mobile */
     }
 
     .quote-mark {
-        font-size: 2.5rem; /* Adjust quote mark size */
+        font-size: 2.5rem;
+        /* Adjust quote mark size */
     }
 }
 
 @media (max-width: 576px) {
     .about-section h1 {
-        font-size: 1.5rem; /* Adjust title size for very small screens */
+        font-size: 1.5rem;
+        /* Adjust title size for very small screens */
     }
 
     .quote-text {
-        font-size: 1rem; /* Adjust quote text size for small screens */
+        font-size: 1rem;
+        /* Adjust quote text size for small screens */
     }
 
     .quote-mark {
-        font-size: 2rem; /* Adjust quote mark size for small screens */
+        font-size: 2rem;
+        /* Adjust quote mark size for small screens */
     }
 }
-
-
-
